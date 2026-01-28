@@ -1,0 +1,7 @@
+﻿l_english:
+ send_all_children_to_exam_decision: "Send All Children to Examinations" 
+ send_all_children_to_exam_decision_desc: "Command every eligible family member to attend the examinations instantly. Standard Influence costs apply per child."
+ send_all_children_to_exam_decision_tooltip: "Sends all eligible children to exams immediately. (Requires Wards & Wardens DLC)"
+ send_all_children_to_exam_decision_confirm: "Confirm"
+ send_all_children_to_exam_decision.no_eligible_family_failure: "No eligible family members found that are valid for examination."
+ send_all_children_to_exam_decision.effect: "Sent all eligible children to take children´s examinations."

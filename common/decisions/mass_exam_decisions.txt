@@ -1,0 +1,55 @@
+﻿send_all_children_to_exam_decision = {
+	
+	decision_group_type = admin
+	sort_order = 10 
+	
+	title = send_all_children_to_exam_decision 
+	desc = send_all_children_to_exam_decision_desc
+	confirm_text = send_all_children_to_exam_decision_confirm
+	
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/tgp_examination_room.dds"
+	}
+	
+	selection_tooltip = send_all_children_to_exam_decision_tooltip
+	
+	is_shown = {
+		is_ai = no
+		government_allows = merit
+		has_tgp_dlc_trigger = yes
+	}
+	
+    is_valid_showing_failures_only = {
+        trigger_if = {
+            limit = { always = yes }
+            custom_tooltip = {
+                text = send_all_children_to_exam_decision.no_eligible_family_failure
+                any_close_family_member = {
+                    can_send_child_to_exam_trigger = yes 
+                }
+            }
+        }
+    }
+	
+	ai_potential = { always = no }
+	
+	effect = {
+		custom_tooltip = { text = send_all_children_to_exam_decision.effect}
+		hidden_effect = {
+			every_close_family_member = {
+				limit = {
+					can_send_child_to_exam_trigger = yes 
+				}
+				
+				root = { 
+					run_interaction = {
+						interaction = send_child_to_examination_interaction
+						actor = root
+						recipient = prev
+						send_threshold = accept
+					}
+				}
+			}
+		}
+	}
+}

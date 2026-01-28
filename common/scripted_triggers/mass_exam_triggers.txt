@@ -1,0 +1,8 @@
+﻿can_send_child_to_exam_trigger = {
+	root = {
+		is_character_interaction_valid = {
+			recipient = prev
+			interaction = send_child_to_examination_interaction
+		}
+	}
+}
