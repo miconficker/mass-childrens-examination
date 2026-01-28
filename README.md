@@ -8,4 +8,4 @@ fixes:
 - proper cost subtracting
 - cooldown on exam failure
 
-Workshop link: https://steamcommunity.com/sharedfiles/filedetails/?id=3622239450
+Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3622239450
